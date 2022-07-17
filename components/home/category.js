@@ -1,6 +1,6 @@
 import React from 'react'
 
-const category = () => {
+const Category = () => {
   return (
     <section className="category-area ptb-100 px-16">
       <div className="container">
@@ -75,4 +75,4 @@ const category = () => {
   )
 }
 
-export default category
+export default Category
