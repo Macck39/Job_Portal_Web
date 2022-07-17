@@ -1,14 +1,14 @@
 import '../styles/tailwind.css'
-// import '../styles/bootstrap.min.css'
-// import '../styles/meanmenu.css'
-// import '../styles/icofont.css'
-// import '../styles/owl.carousel.min.css'
-// import '../styles/owl.theme.default.min.css'
-// import '../styles/animate.min.css'
-// import '../styles/odometer.min.css'
-// import '../styles/style.css'
-// import '../styles/responsive.css'
-// import '../styles/theme-dark.css'
+// import '/assets/css/bootstrap.min.css'
+// import '/assets/css/meanmenu.css'
+// import '/assets/css/icofont.css'
+// import '/assets/css/owl.carousel.min.css'
+// import '/assets/css/owl.theme.default.min.css'
+// import '/assets/css/animate.min.css'
+// import '/assets/css/odometer.min.css'
+// import '/assets/css/style.css'
+// import '/assets/css/responsive.css'
+// import '/assets/css/theme-dark.css'
 
 
 
@@ -17,7 +17,7 @@ import Layout from "../components/layoutcomponent/Layout"
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
-    <main className='container'>
+    <main className='props'>
     <Component {...pageProps} />
     </main>
     </Layout>)
@@ -31,4 +31,3 @@ export default MyApp
 
 
 
-// import Layout from '../components/LayoutComponent/Layout'

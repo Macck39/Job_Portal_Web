@@ -1,27 +1,14 @@
-import React from 'react';
-import path from 'path';
-import fs from 'fs'
+import React from 'react'
+import path from 'path'
 import Head from 'next/head'
-import matter from 'gray-matter';
+import matter from 'gray-matter'
+import BlogPosts from '../../components/blog/BlogPosts'
+import fs from 'fs'
+import {sortByDate} from '../../components/blog/sortByDate'
 
-export default function test({ posts}) {
-  console.log(posts)
-
+export default function blogs ({ posts }){
   return (
-    <div>
-      <Head>
-        <title> Blogs</title>
-      </Head>
-
-       <div className='posts'>
-      {posts.map((post,index)=>(
-        <h3>{post.frontmatter.title}</h3>
-      ))}
-      </div>
-
-    
-    </div>
-
+    <BlogPosts posts={posts}/>
   )
 }
 
@@ -46,11 +33,12 @@ export async function getStaticProps() {
       frontmatter
     }
   })
-  console.log(posts)
+  
+  // console.log(posts)
 
   return {
     props: {
-      posts,
+      posts: posts.sort(sortByDate)
     }
   }
 }

@@ -2,11 +2,11 @@ import React from 'react'
 
 const Banner = () => {
   return (
-      <div className="banner-area bg-[url('/assets/img/home-1/banner1.jpg')] ">
+      <div className="banner-area parallax lg:min-h-screen ">
       <div className="d-table">
         <div className="d-table-cell">
           <div className="container">
-            <div className="banner-text  flex flex-col px-20 justify-content item-center content-center">
+            <div className="banner-text lg:mt-40   flex flex-col px-20 justify-content items-center content-center ">
               <h1>
                 Find Your <span>Desired</span> Job
               </h1>

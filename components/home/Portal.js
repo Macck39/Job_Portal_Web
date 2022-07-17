@@ -9,10 +9,10 @@ const Portal = () => {
             <div className="portal-item">
               <div className="row">
                 <div className="col-lg-7">
-                  <img src="assets/img/home-1/1.jpg" alt="Portal" />
+                  <img src="assets/img/home-1/portall.jpg" alt="Portal" />
                 </div>
                 <div className="col-lg-5">
-                  <img src="assets/img/home-1/2.jpg" alt="Portal" />
+                  <img src="assets/img/home-1/portal.jpg" alt="Portal" />
                 </div>
               </div>
               <div className="portal-trusted">
