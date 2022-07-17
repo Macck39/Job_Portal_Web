@@ -1,0 +1,501 @@
+$white-color: #ffffff;
+$green-color: rgba(56,167,69,1);
+$dark-color: #1d1d1d;
+$bg-color: #252525;
+$card-bg: #0e0e0e;
+
+.switch-box {
+    position: fixed;
+    bottom: 15px;
+    right: 120px;
+    z-index: 9999;
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: transparent;
+        border: 1.5px solid $white-color;
+        transition: 0.4s;
+        &::before {
+            position: absolute;
+            content: "";
+            height: 25px;
+            width: 25px;
+            left: 0px;
+            bottom: 4px;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            transition: 0.4s;
+            box-shadow: 0 0px 15px #2020203d;
+            background: white url('../img/night.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &.round {
+            border-radius: 34px;
+            &::before {
+                border-radius: 50%;
+            }
+        }
+    }
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 30px;
+        input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+    }
+    input:checked + .slider {
+        background-color: transparent;
+        border: 1.5px solid $card-bg;
+    }
+      
+    input:focus + .slider {
+        box-shadow: 0 0 1px $card-bg;
+    }
+      
+    input:checked + .slider:before {
+        transform: translateX(24px);
+        background: white url('../img/sunny.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.theme-dark {
+    $black-colo: #ffffff;
+    h1, h2, h3, h4, h5, h6 {
+        color: $white-color; 
+    }
+    h3 {
+        color: $white-color; 
+        a {
+            color: $white-color !important;
+            transition: 0.7s;
+            &:hover {
+                color: $green-color !important;
+            }
+        }
+    }
+    p {
+        color: $white-color !important; 
+    }
+    body {
+        background: $dark-color;
+        color: $white-color; 
+    }
+    .common-btn {
+        .login-btn {
+            color: $white-color;
+        }
+        .sign-up-btn {
+            &:hover {
+                color: $white-color;
+            }
+        }
+    }
+   
+    .main-nav {
+        background-color: $bg-color;
+        nav {
+            .navbar-nav  {
+                .nav-item {
+                    a {
+                        color: $white-color; 
+                        i {
+                            color: $white-color; 
+                        }
+                        &.active {
+                            color: $green-color !important;
+                        }
+                        &:hover {
+                            color: $green-color !important;
+                        }
+                    }
+                }   
+            }
+        }
+    }
+    .navbar-area-two {
+        .menu-shrink {
+            background-color: $bg-color !important;
+        }
+    }
+    .banner-area {
+        &:before {
+            opacity: 0.7;
+        }
+    }
+    .banner-btn  {
+        a {
+            background-color: $bg-color;
+            transition: 0.7s;
+            &:hover {
+                background-color: $green-color;
+                color: $white-color;
+            }
+        }
+       
+    }
+    .banner-form-area {
+        background-color: #252525;
+        box-shadow: 0px 0px 0 15px #4d4d4d;
+        form {
+            .form-group {
+                .form-control {
+                    background-color: $bg-color;
+                    color: $white-color;
+                }
+                .form-select {
+                    background-color: $bg-color;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+    .banner-form-area form .form-group .form-control::-webkit-input-placeholder {
+        color: $white-color;
+    }
+    .banner-form-area form .form-group .form-control:-ms-input-placeholder {
+        color: $white-color;
+    }
+    .banner-form-area form .form-group .form-control::-ms-input-placeholder {
+        color: $white-color;
+    }
+    .banner-form-area form .form-group .form-control::placeholder {
+        color: $white-color;
+    }
+    .banner-area-three {
+        background-color: $card-bg;
+        .banner-text {
+            h1 {
+                color: $white-color;
+            }
+        }
+    }
+    .page-title-area {
+        background-image: none;
+        background-color: $card-bg;
+    }
+    .category-item {
+        a {
+            color: $white-color;
+        }
+    }
+    .jobseeker-area, .category-area-two {
+        background-color: $bg-color;
+    }
+    .category-area-two{
+        .category-item {
+            background-color: $card-bg;
+        }
+    }
+    .sorting-menu {
+        ul {
+            li {
+                color: $white-color;
+            }
+        }
+    }
+    .account-area, .counter-area {
+        background-image: none;
+        background-color: $card-bg;
+    }
+    .job-item {
+        .job-inner {
+            .job-inner-left {
+                h3 {
+                    a {
+                        color: $white-color !important;
+                    }
+                }
+            }
+            .job-inner-right {
+                ul {
+                    li {
+                        a {
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .popular-item {
+        ul {
+            li {
+                color: $white-color;
+            }
+        }
+    }
+    .companies-area {
+        background-color: $bg-color;
+    }
+    .companies-item {
+        background-color: $card-bg;
+        .companies-btn {
+            color: $white-color;
+        }
+    }
+    .company-details-item {
+        .company-details-share {
+            span {
+                color: $white-color;
+            }
+        }
+        .company-details-find {
+            h3 {
+                color: $white-color;
+            }
+        }
+        .company-details-find {
+            ul {
+                li {
+                    a {
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+        .company-details-description {
+            h3 {
+                color: $white-color;
+            }
+        }
+    }
+   
+    .profile-item {
+        .profile-inner {
+            background-color: $bg-color;
+        }
+    }
+    .single-profile-item {
+        .single-profile-right {
+            .single-profile-name {
+                h2 {
+                    color: $white-color;
+                }
+            }
+        }
+        .single-profile-right {
+            .single-profile-textarea {
+                .single-profile-paragraph {
+                    ul {
+                        li {
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+        .single-profile-left {
+            .single-profile-contact {
+                h3 {
+                    color: $white-color;
+                }
+                ul {
+                    li {
+                        color: $white-color;
+                        a {
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+            .single-profile-social {
+                h3 {
+                    color: $white-color;
+                }
+                ul {
+                    li {
+                        a {
+                            color: $white-color;
+                        }
+                        color: $white-color;
+                    }
+                }
+            }
+            .single-profile-skills {
+                h3 {
+                    color: $white-color;
+                }
+            }
+        }
+    }
+    .single-resume-profile {
+        span {
+            color: $white-color;
+        }
+    }
+    .single-resume-education {
+        span {
+            color: $white-color;
+        }
+    }
+    .single-resume-skills {
+        ul {
+            li {
+                color: $white-color;
+            }
+        }
+    }
+    .create-photo {
+        .create-photo-item {
+            .create-photo-right {
+                .form-group {
+                    .form-control {
+                        background-color: $card-bg;
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+   
+    .blog-details-item {
+        .blog-details-nav {
+            a {
+                color: $white-color;
+            }
+        }
+        .blog-details-form {
+            .form-group {
+                .form-control {
+                    background-color: $card-bg;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+    .subscribe-area {
+        background-color: $bg-color;
+    }
+    .subscribe-item {
+        .newsletter-form {
+            .form-control {
+                background-color: $card-bg;
+                color: $white-color;
+            }
+        }
+    }
+    .contact-form-area {
+        .form-group {
+            label {
+                color: $white-color;
+                a {
+                    &:hover {
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+    .post-job-item {
+        .form-group {
+            label {
+                color: $white-color;
+            }
+            .form-control {
+                background-color: $card-bg;
+                color: $white-color;
+            }
+            .job-category-area {
+                .form-select {
+                    background-color: $card-bg;
+                    color: $white-color;
+                }
+            }
+        }
+        .job-currency-area {
+            .form-select {
+                background-color: $bg-color;
+                color: $white-color;
+            }
+        }
+    }
+    .create-information {
+        .form-group {
+            label {
+                color: $white-color;
+            }
+            .form-control {
+                background-color: $card-bg;
+                color: $white-color;
+            }
+        }
+    }
+    .create-education {
+        .form-group {
+            label {
+                color: $white-color;
+            }
+            .form-control {
+                background-color: $card-bg;
+                color: $white-color;
+            }
+        }
+    }
+    .create-skills {
+        .form-group {
+            label {
+                color: $white-color;
+            }
+            .form-control {
+                background-color: $card-bg;
+                color: $white-color;
+            }
+        }
+    }
+    .form-group {
+        label {
+            color: $white-color;
+        }
+        .form-control {
+            background-color: $card-bg;
+            color: $white-color;
+        }
+    }
+    .dashboard-area {
+        .dashboard-nav {
+            ul {
+                li {
+                    a {
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+    .login-area {
+        .login-sign-in {
+            ul {
+                li {
+                    color: $white-color;
+                }
+            }
+        }
+    }
+    .accordion {
+        a {
+            color: $white-color !important;
+            &::after {
+                color: $white-color;
+            }
+        }
+    }
+    .privacy-item {
+        ul {
+            li {
+                color: $white-color;
+            }
+        }
+    }
+}
