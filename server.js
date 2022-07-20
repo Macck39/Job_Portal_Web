@@ -15,6 +15,8 @@ app.prepare().then(()=> {
     server.listen(port, (err)=> {
         if(err) throw err
         console.log("server ready!")
+        console.log(port)
+
     })
 }).catch((ex)=>{
     console.error(ex.stack)
