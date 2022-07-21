@@ -16,7 +16,7 @@ export default function Blogs({ posts }) {
         <div className="container">
           <div className="row">
 
-          {posts?.map((post)=>(
+          {posts.map((post)=>(
             
               <PostCard post={post} key={post.slug}/>
              
