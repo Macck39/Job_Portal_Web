@@ -8,7 +8,7 @@ const Banner = () => {
           <div className="container">
             <div className="banner-text lg:mt-40   flex flex-col px-20 justify-content items-center content-center ">
               <h1>
-                Find Your <span>Desired</span> Job
+                Find Your <span className="text-5xl">Desired</span> Job
               </h1>
               <p>Jobs, Employment &amp; Future Career Opportunities</p>
               <div className="banner-form-area   ">

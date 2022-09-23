@@ -25,13 +25,12 @@ const Popular = () => {
           </div>
           <div className="col-lg-6">
             <div className="popular-item popular-right">
-              <div className="section-title text-left">
-                <h2>Why We are Most Popular</h2>
+              <div className="section-title text-center font-bold">
+                <h2 >Our Vision</h2>
               </div>
               <p>
-                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse
-                ultrices gravida
+                Our Vision is to help people to get employment, they are fighting the battle 
+                against unemployment in India. We teach people to crack all types of interviews and we increase people&apos;s communication skills and confidence so that all people can get their dream job, we also teach how to move ahead in job career.
               </p>
               <div className="row popular-wrap">
                 <div className="col-sm-6 col-lg-6">

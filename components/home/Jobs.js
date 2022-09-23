@@ -37,9 +37,9 @@ const Jobs = () => {
             <div className="job-inner align-items-center">
               <div className="job-inner-left">
                 <h3>
-                  <a href="job-details.html">UI/UX Designer</a>
+                  <a href="#">UI/UX Designer</a>
                 </h3>
-                <a className="company" href="company-details.html">
+                <a className="company" href="#">
                   Winbrans.com
                 </a>
                 <ul>
@@ -56,7 +56,7 @@ const Jobs = () => {
               <div className="job-inner-right">
                 <ul>
                   <li>
-                    <a href="create-account.html">Apply</a>
+                    <a href="#">Apply</a>
                   </li>
                   <li>
                     <span>Full Time</span>
@@ -72,9 +72,9 @@ const Jobs = () => {
             <div className="job-inner align-items-center">
               <div className="job-inner-left">
                 <h3>
-                  <a href="job-details.html">Android Developer</a>
+                  <a href="#">Android Developer</a>
                 </h3>
-                <a className="company" href="company-details.html">
+                <a className="company" href="#">
                   Infiniza.com
                 </a>
                 <ul>
@@ -91,7 +91,7 @@ const Jobs = () => {
               <div className="job-inner-right">
                 <ul>
                   <li>
-                    <a href="create-account.html">Apply</a>
+                    <a href="#">Apply</a>
                   </li>
                   <li>
                     <span>Part Time</span>
@@ -107,9 +107,9 @@ const Jobs = () => {
             <div className="job-inner align-items-center">
               <div className="job-inner-left">
                 <h3>
-                  <a href="job-details.html">Senior Manager</a>
+                  <a href="#">Senior Manager</a>
                 </h3>
-                <a className="company" href="company-details.html">
+                <a className="company" href="#">
                   Glovibo.com
                 </a>
                 <ul>
@@ -126,7 +126,7 @@ const Jobs = () => {
               <div className="job-inner-right">
                 <ul>
                   <li>
-                    <a href="create-account.html">Apply</a>
+                    <a href="#">Apply</a>
                   </li>
                   <li>
                     <span>Intern</span>
@@ -142,9 +142,9 @@ const Jobs = () => {
             <div className="job-inner align-items-center">
               <div className="job-inner-left">
                 <h3>
-                  <a href="job-details.html">Product Designer</a>
+                  <a href="#">Product Designer</a>
                 </h3>
-                <a className="company" href="company-details.html">
+                <a className="company" href="#">
                   Bizotic.com
                 </a>
                 <ul>
@@ -161,7 +161,7 @@ const Jobs = () => {
               <div className="job-inner-right">
                 <ul>
                   <li>
-                    <a href="create-account.html">Apply</a>
+                    <a href="#">Apply</a>
                   </li>
                   <li>
                     <span>Part Time</span>
@@ -177,9 +177,9 @@ const Jobs = () => {
             <div className="job-inner align-items-center">
               <div className="job-inner-left">
                 <h3>
-                  <a href="job-details.html">Digital Marketer</a>
+                  <a href="#">Digital Marketer</a>
                 </h3>
-                <a className="company" href="company-details.html">
+                <a className="company" href="#">
                   Hotelzo.com
                 </a>
                 <ul>
@@ -196,7 +196,7 @@ const Jobs = () => {
               <div className="job-inner-right">
                 <ul>
                   <li>
-                    <a href="create-account.html">Apply</a>
+                    <a href="#">Apply</a>
                   </li>
                   <li>
                     <span>Intern</span>
@@ -212,9 +212,9 @@ const Jobs = () => {
             <div className="job-inner align-items-center">
               <div className="job-inner-left">
                 <h3>
-                  <a href="job-details.html">Sales Manager</a>
+                  <a href="#">Sales Manager</a>
                 </h3>
-                <a className="company" href="company-details.html">
+                <a className="company" href="#">
                   Gozuto.com
                 </a>
                 <ul>
@@ -231,7 +231,7 @@ const Jobs = () => {
               <div className="job-inner-right">
                 <ul>
                   <li>
-                    <a href="create-account.html">Apply</a>
+                    <a href="#">Apply</a>
                   </li>
                   <li>
                     <span>Part Time</span>
@@ -247,9 +247,9 @@ const Jobs = () => {
             <div className="job-inner align-items-center">
               <div className="job-inner-left">
                 <h3>
-                  <a href="job-details.html">Web Developer</a>
+                  <a href="#">Web Developer</a>
                 </h3>
-                <a className="company" href="company-details.html">
+                <a className="company" href="#">
                   Udiza.com
                 </a>
                 <ul>
@@ -266,7 +266,7 @@ const Jobs = () => {
               <div className="job-inner-right">
                 <ul>
                   <li>
-                    <a href="create-account.html">Apply</a>
+                    <a href="#">Apply</a>
                   </li>
                   <li>
                     <span>Full Time</span>
@@ -282,9 +282,9 @@ const Jobs = () => {
             <div className="job-inner align-items-center">
               <div className="job-inner-left">
                 <h3>
-                  <a href="job-details.html">SEO</a>
+                  <a href="#">SEO</a>
                 </h3>
-                <a className="company" href="company-details.html">
+                <a className="company" href="#">
                   Oqota.com
                 </a>
                 <ul>
@@ -301,7 +301,7 @@ const Jobs = () => {
               <div className="job-inner-right">
                 <ul>
                   <li>
-                    <a href="create-account.html">Apply</a>
+                    <a href="#">Apply</a>
                   </li>
                   <li>
                     <span>Part Time</span>

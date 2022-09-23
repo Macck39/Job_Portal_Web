@@ -42,7 +42,7 @@ export default function Jobs () {
                                     <div className="job-inner-right">
                                         <ul>
                                             <li>
-                                                <a href="create-account.html">Apply</a>
+                                                <a>Apply</a>
                                             </li>
                                             <li>
                                                 <span>Full Time</span>

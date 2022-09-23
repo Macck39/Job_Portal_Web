@@ -28,18 +28,20 @@ export default function Home({ posts }) {
         <meta charSet="UTF-8" />
         <meta name="description" content="Job Portal providing hriring solutions for employees as well as for employers" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="job provider, job, vacancies, opportunities" />
       </Head>
       <main>
         <Banner />
         <Account />
         <Category />
-        <Portal />
         <Jobs />
+        <Portal />
         <Popular />
         {/* <Profile />*/}
         <Addapp />
         <Blogs posts={posts}/>
       </main>
+      
     </div>
   )
 }

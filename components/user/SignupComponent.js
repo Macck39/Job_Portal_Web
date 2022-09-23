@@ -1,54 +1,47 @@
-import React from 'react'
 import { useState } from 'react';
+import { useRouter } from 'next/router'
+import axios from 'axios'
+import { Alert } from "@material-tailwind/react";
+
 
 const SignupComponent = () => {
-
-    const [values, setValues] = useState({
-        name: '',
-        email: '',
-        password: '',
-        error: '',
-        loading: false,
-        message: '',
-        showForm: true
-    });
-
-    const {name, email, password, error, loading, message, showForm} = values;
+    
+   
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+    const router = useRouter()
+    
+    const url = process.env.URL
 
 
-    const handleSubmit = () => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log({ name, email, password, error, loading, message, showForm });
+        const res = await axios.post(`http://localhost:8000/api/auth/signup`, {
+            name,
+            email,
+            password
+        })
+        const res2 = await res.data
+
+        // console.log("hii");
+
+        if (res2.error) {
+            console.log(res2);
+            <Alert color="red"> Signup Failed</Alert>
+            
+        } else {
+            <Alert color="green">Signup Successfull.</Alert>
+            router.push('/login')
+        }
     }
 
-const handleChange = name => e => {
-    setValues({...values, error: false, [name]: e.target.value})
-}
 
     return (
         <div>
-            <div className="page-title-area">
-                <div className="d-table">
-                    <div className="d-table-cell">
-                        <div className="container">
-                            <div className="page-title-text">
-                                <h2>Create Your Account </h2>
-                                <ul>
-                                    <li>
-                                        <a href="index.html">Home</a>
-                                    </li>
-                                    <li>
-                                        <i className="icofont-simple-right"></i>
-                                    </li>
-                                    <li>Log In</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <div className="login-area pt-100">
-                <div className="container">
+                <div className="container pt-8 ">
                     <h2>Create Your Account</h2>
 
                     <div className="login-wrap">
@@ -84,7 +77,7 @@ const handleChange = name => e => {
                         </div>
                     </div>
 
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={(e) => handleSubmit(e)}>
                         <div className="form-group">
                             <input
                                 type="text"
@@ -92,7 +85,7 @@ const handleChange = name => e => {
                                 value={name}
                                 name="name"
                                 placeholder=" Name"
-                                onChange={handleChange('name')} />
+                                onChange={(e) => setName(e.target.value)} />
                         </div>
                         <div className="form-group">
                             <input
@@ -101,7 +94,7 @@ const handleChange = name => e => {
                                 className="form-control"
                                 name="email"
                                 placeholder=" Email"
-                                onChange={handleChange('email')} />
+                                onChange={(e) => setEmail(e.target.value)} />
                         </div>
                         <div className="form-group">
                             <input type="password"
@@ -109,23 +102,21 @@ const handleChange = name => e => {
                                 className="form-control"
                                 name="password"
                                 placeholder="Password"
-                                onChange={handleChange('password')} />
+                                onChange={(e) => setPassword(e.target.value)} />
                         </div>
-                        
+                        <div className="login-sign-in">
+                          
+                                <button type="submit" className="btn login-btn">Sign Up</button>
+                          
+                        </div>
                     </form>
 
-                    <div className="login-sign-in">
-
-                        <div className="text-center">
-                            <button type="submit"  className="btn login-btn">Sign Up</button>
-                        </div>
-                    </div>
 
                 </div>
             </div>
         </div>
     )
-    
+
 }
 
 export default SignupComponent;

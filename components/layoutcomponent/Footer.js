@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from "next/link"
 
 const Footer = () => {
   return (
@@ -33,31 +34,41 @@ const Footer = () => {
         <div className="row">
             <div className="col-sm-6 col-lg-3">
                 <div className="footer-item">
-                    <div className="footer-logo">
-                        <a href="#">
-                        
-                        </a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
-                        <ul>
-                            <li>
-                                <a>
+                    <div className="footer-logo md:mt-20 ">
+                                                
+                        <ul className="flex items-center justify-center">
+                            <li >
+                            <Link href="https://www.youtube.com/channel/UCGlGQkTaospXplIKqqIUNHg">
+                                <a target="_blank" rel="noopener noreferrer" >
                                     <i className="icofont-youtube-play"></i>
                                 </a>
+                                </Link>
                             </li>
-                            <li>
-                                <a>
+                            <li><Link href="https://www.facebook.com/Officialjobsahihai">
+                                <a target="_blank" rel="noopener noreferrer" >
                                     <i className="icofont-facebook"></i>
                                 </a>
+                                </Link>
                             </li>
-                            <li>
-                                <a >
+                            <li><Link href="https://www.instagram.com/jobsahihai/">
+                                <a target="_blank" rel="noopener noreferrer" >
                                     <i className="icofont-instagram"></i>
                                 </a>
+                                </Link>
                             </li>
                             <li>
-                                <a >
+                            <Link href="https://twitter.com/jobsahihai"_>
+                                <a target="_blank" rel="noopener noreferrer" >
                                     <i className="icofont-twitter"></i>
                                 </a>
+                                </Link>
+                            </li>
+                            <li>
+                            <Link href="https://www.linkedin.com/company/jobsahihai/?viewAsMember=true" >
+                                <a target="_blank" rel="noopener noreferrer" >
+                                    <i className="icofont-linkedin"></i>
+                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -108,25 +119,31 @@ const Footer = () => {
                         <h3>Quick Links</h3>
                         <ul>
                             <li>
-                                <a href="">
+                            <Link href="/">
+                                <a>
                                     <i className="icofont-simple-right"></i>
                                     Home
                                 </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="about">
+                            <Link href="/about">
+                                <a>
                                     <i className="icofont-simple-right"></i>
                                     About Us
                                 </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/blog">
+                            <Link href="/blogs">
+                                <a>
                                     <i className="icofont-simple-right"></i>
                                     Blogs
                                 </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="#">
                                     <i className="icofont-simple-right"></i>
                                     Companies
                                 </a>
@@ -146,20 +163,21 @@ const Footer = () => {
                     <div className="footer-find">
                         <h3>Find Us</h3>
                         <ul>
-                            <li>
+                            <li className="text-sm">
                                 <i className="icofont-location-pin"></i>
-                                28/A Street, New York City
+                                Jaitpur Badarpur New Delhi 110044
+
                             </li>
                             <li>
                                 <i className="icofont-ui-call"></i>
-                                <a href="tel:+880123456789">
-                                    +88 0123 456 789
+                                <a >
+                                8700828936
                                 </a>
                             </li>
                             <li>
                                 <i className="icofont-ui-email"></i>
-                                <a href="mailto:hello@gable.com">
-                                    hello@gable.com
+                                <a>
+                                Business@jobsahihai.com
                                 </a>
                             </li>
                         </ul>

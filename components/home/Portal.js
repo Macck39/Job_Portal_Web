@@ -22,18 +22,17 @@ const Portal = () => {
           </div>
           <div className="col-lg-6">
             <div className="portal-item portal-right">
-              <h2>Trusted &amp; Popular Job Portal</h2>
+              <h2>What we do...!</h2>
               <p>
-                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet,
-                consectetur.
+               Let us help your business thrive!
+               Provinding professional Support
               </p>
               <div className="common-btn">
-                <a className="login-btn" href="post-a-job.html">
+                <a className="login-btn" href="#">
                   Post a Job
                   <i className="icofont-swoosh-right" />
                 </a>
-                <a className="sign-up-btn" href="create-account.html">
+                <a className="sign-up-btn" href="#">
                   Apply Now
                   <i className="icofont-swoosh-right" />
                 </a>

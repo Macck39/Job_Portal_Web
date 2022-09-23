@@ -32,7 +32,7 @@ const Welcome = () => {
                                         </li>
                                         <li>
                                             <i className="flaticon-employee"></i>
-                                            International Job
+                                            Latest Jobs
                                         </li>
                                     </ul>
                                 </div>

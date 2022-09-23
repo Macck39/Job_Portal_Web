@@ -1,17 +1,17 @@
 import Header from "./Header"
 import Footer from "./Footer"
+import styled from "styled-components"
+import Head from "next/head"
 
 
-
-
-export default function Layout({children}){
+export default function Layout({ children }) {
     return (
-        <main className="layout ">
-        <Header />
-        <div className="child ">
-        {children}
-        </div>
-        <Footer/>
-        </main>
+        <>
+            <Head>
+            </Head>
+            <Header />
+            {children}
+            <Footer />
+        </>
     )
 }

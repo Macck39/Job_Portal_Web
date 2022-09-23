@@ -1,4 +1,6 @@
 import '../styles/tailwind.css'
+import '../styles/globals.css'
+
 // import '/assets/css/bootstrap.min.css'
 // import '/assets/css/meanmenu.css'
 // import '/assets/css/icofont.css'

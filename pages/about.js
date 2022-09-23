@@ -1,5 +1,4 @@
 import React from 'react'
-import Title from '../components/about/Title'
 import Blogs from '../components/home/Blogs'
 import Popular from '../components/home/Popular'
 import Category from "../components/home/Category";
@@ -11,10 +10,9 @@ import matter from 'gray-matter'
 import fs from 'fs'
 
 
-export default function about({ posts}) {
+export default function About({ posts}) {
   return (
-    <div>
-    <Title />
+    <div className="container">
     <Category />
     <Welcome />
     <Portal />
